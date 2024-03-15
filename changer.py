@@ -1,4 +1,4 @@
-A1import threading;import os;import pystyle;from pystyle import Write, Colors;from colorama import Fore, Style;import ctypes;import random;from datetime import datetime;import json;import requests;from json import load;from faker import Faker;fake = Faker();os.system("cls");session = requests.Session()
+import threading;import os;import pystyle;from pystyle import Write, Colors;from colorama import Fore, Style;import ctypes;import random;from datetime import datetime;import json;import requests;from json import load;from faker import Faker;fake = Faker();os.system("cls");session = requests.Session()
 tokens = []
 with open('tokens.txt', 'r') as tokens_file:
     tokens = tokens_file.read().splitlines()
