@@ -1,4 +1,4 @@
-import threading;import os;import pystyle;from pystyle import Write, Colors;from colorama import Fore, Style;import ctypes;import random;from datetime import datetime;import json;import requests;from json import load;from faker import Faker;fake = Faker();os.system("cls");session = requests.Session()
+A1import threading;import os;import pystyle;from pystyle import Write, Colors;from colorama import Fore, Style;import ctypes;import random;from datetime import datetime;import json;import requests;from json import load;from faker import Faker;fake = Faker();os.system("cls");session = requests.Session()
 tokens = []
 with open('tokens.txt', 'r') as tokens_file:
     tokens = tokens_file.read().splitlines()
@@ -99,7 +99,7 @@ class PswChanger:
                 set_console_title()
 threads = []
 for token in tokens:
-    instance = PswChanger(str(token).split(':')[0], str(token).split(':')[1])
+    instance = PswChanger(str(token).split(':')[2], str(token).split(':')[1])
     thread = threading.Thread(target=instance.Change)
     threads.append(thread)
     thread.start()
